@@ -25,9 +25,9 @@ let sites = ["http://google.com";
                 "http://bing.com"; 
                 "http://myspace.com"]
 
-[<EntryPoint>]
-let main argv =
-    sites |> List.map bakedIn 
-    0 // return an integer exit code
+//[<EntryPoint>]
+//let main argv =
+//    sites |> List.map bakedIn 
+//    0 // return an integer exit code
 
 

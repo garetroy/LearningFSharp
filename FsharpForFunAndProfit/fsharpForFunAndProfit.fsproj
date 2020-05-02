@@ -9,6 +9,8 @@
     <Compile Include="SumOfSquares.fs" />
     <Compile Include="Sorting.fs" />
     <Compile Include="DownloadingAWebPage.fs" />
+    <Compile Include="KeyConcepts.fs" />
+    <Compile Include="LowOverheadTypeDefinitions.fs" />
   </ItemGroup>
 
 </Project>

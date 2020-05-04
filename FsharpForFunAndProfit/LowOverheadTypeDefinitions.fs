@@ -47,6 +47,6 @@ type CustomerAccount =
         | :? CustomerAccount as otherCust -> (this.AccountId = otherCust.AccountId)
         | _ -> false
 
-[<EntryPoint>]
-let main argv =
-    0 // return an integer exit code
+//[<EntryPoint>]
+//let main argv =
+//    0 // return an integer exit code

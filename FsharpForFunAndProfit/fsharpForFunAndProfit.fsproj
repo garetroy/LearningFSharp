@@ -11,6 +11,7 @@
     <Compile Include="DownloadingAWebPage.fs" />
     <Compile Include="KeyConcepts.fs" />
     <Compile Include="LowOverheadTypeDefinitions.fs" />
+    <Compile Include="ExtracingBoilerplate.fs" />
   </ItemGroup>
 
 </Project>

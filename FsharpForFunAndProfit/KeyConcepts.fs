@@ -18,7 +18,7 @@ let rect = Rectangle(4,5)
 let point = Point(33,12)
 let polygon = Polygon([(1,3); (2,3); (3,3)])
 
-[<EntryPoint>]
-let main argv =
-    [circle; rect; point; polygon] |> List.iter draw
-    0 // return an integer exit code
+//[<EntryPoint>]
+//let main argv =
+//    [circle; rect; point; polygon] |> List.iter draw
+//    0 // return an integer exit code

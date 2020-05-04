@@ -12,6 +12,7 @@
     <Compile Include="KeyConcepts.fs" />
     <Compile Include="LowOverheadTypeDefinitions.fs" />
     <Compile Include="ExtracingBoilerplate.fs" />
+    <Compile Include="BuildingBlockss.fs" />
   </ItemGroup>
 
 </Project>

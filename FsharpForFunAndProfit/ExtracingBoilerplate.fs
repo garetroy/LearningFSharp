@@ -35,12 +35,12 @@ let getMaxInArray A =
         let action currentMax x = if currentMax > x then currentMax else x
         rest |> List.fold action first
 
-[<EntryPoint>]
-let main argv =
-    printf "%d\n" (product 4)
-    printf "%d\n" (sumOfOdds 3)
-    printf "%d\n" (alternatingSum 4)
-    printf "%d\n" (sumOfSquareWithFold 3)
-    printf "%d\n" (getMaxInArray [3;4;133;42])
-    0 // return an integer exit code
+//[<EntryPoint>]
+//let main argv =
+//    printf "%d\n" (product 4)
+//    printf "%d\n" (sumOfOdds 3)
+//    printf "%d\n" (alternatingSum 4)
+//    printf "%d\n" (sumOfSquareWithFold 3)
+//    printf "%d\n" (getMaxInArray [3;4;133;42])
+//    0 // return an integer exit code
 

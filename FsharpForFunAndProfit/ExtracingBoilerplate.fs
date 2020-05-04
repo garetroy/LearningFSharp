@@ -33,7 +33,7 @@ let getMaxInArray A =
         0 
     | first :: rest ->
         let action currentMax x = if currentMax > x then currentMax else x
-        A |> List.fold action first
+        rest |> List.fold action first
 
 [<EntryPoint>]
 let main argv =

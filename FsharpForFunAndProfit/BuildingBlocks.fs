@@ -103,6 +103,78 @@ let showRainbow =
 
 let showRainbowAction = defaultShape |> showRainbow
 
+type Point = {
+    x : float;
+    y : float;
+    z : float;
+}
+
+let pow2Subtracted x y = (x - y) ** 2.0    
+
+let getWidth points =
+    match points with
+        | [] -> -1.0
+        | _ -> (pow2Subtracted points.[1].x points.[0].x) + (pow2Subtracted points.[1].y points.[0].y) |> sqrt  
+
+let getHeight points =
+    match points with
+        | [] -> -1.0
+        | _ -> (pow2Subtracted points.[2].x points.[1].x) + (pow2Subtracted points.[2].y points.[1].y) |> sqrt  
+
+let logWidth points = points |> getWidth |> printf "%fx"; points
+let logHeight points = points |> getHeight |> printf "%f"; points 
+
+let logDim = logWidth >> logHeight 
+
+type Color = Red | Blue | Yellow | White | Black
+let logColor color =
+    match color with
+        | Red -> printf "Red"
+        | Blue -> printf "Blue"
+        | Yellow -> printf "Yellow"
+        | White -> printf "White"
+        | Black -> printf "Black"
+        | _ -> printf "NoColor"
+    color
+
+
+type Shape3D = {
+    Color : Color;
+    Points: Point list;
+    Width: Point list -> float;
+    Height: Point list-> float;
+    Log: Point list -> Point list  
+}
+
+let firstPoint = {
+    x = 0.0
+    y = 10.0
+    z = 12.0
+}
+
+let secondPoint = {
+    x = -12.0
+    y = 3.0
+    z = 5.0
+}
+
+let thirdPoint = {
+    x = 4.0
+    y = -5.0
+    z = 19.0
+}
+
+let defaultPoints = [firstPoint; secondPoint; thirdPoint;]
+
+//Faild... will try again with more knowledge
+//let defaultShape = {
+//    Color = Color.Black;
+//    Points = defaultPoints;
+//    Width = this.Points |> getWidth;
+//    Height = this.Points |> getHeight;
+//    Log = this.Points  |> logDim
+//}
+
 [<EntryPoint>]
 let main argv =
     map2

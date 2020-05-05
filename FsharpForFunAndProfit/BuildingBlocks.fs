@@ -44,16 +44,78 @@ let getDate interval scale direction =
 
     System.DateTime.Now.AddHours(float(signedHours))
 
+type FluentShape = {
+    label : string;
+    color : string;
+    onClick: FluentShape -> FluentShape 
+}
+
+let defaultShape = {
+    label = "";
+    color = "";
+    onClick = fun shape->shape
+}
+
+let click (shape:FluentShape) = 
+    shape.onClick shape
+
+let display (shape:FluentShape) = 
+    printfn "My label=%s and my color %s" shape.label shape.color
+    shape
+
+let setLabel label shape =
+    {shape with FluentShape.label = label}
+
+let setColor color shape = 
+    {shape with FluentShape.color = color}
+
+let appendClickAction action shape = 
+    {shape with FluentShape.onClick = shape.onClick >> action}
+
+let setRedBox = setColor "red" >> setLabel "box"
+let setBlueBox = setRedBox >> setColor "blue"
+
+let changeColorOnClick color = appendClickAction (setColor color)
+
+let redBox = defaultShape |> setRedBox
+let blueBox = defaultShape |> setBlueBox
+
+let redAction = redBox
+                    |> display
+                    |> changeColorOnClick "green"
+                    |> click
+                    |> display
+
+let blueAction = blueBox 
+                    |> display
+                    |> appendClickAction (setLabel "box2" >> setColor "green")
+                    |> click
+                    |> display
+
+let rainbow =
+    ["red";"orange";"yellow";"green";"blue";"indigo";"violet"]
+
+let showRainbow = 
+    let setColorAndDisplay color = setColor color >> display
+    rainbow
+    |> List.map setColorAndDisplay
+    |> List.reduce (>>)
+
+let showRainbowAction = defaultShape |> showRainbow
+
 [<EntryPoint>]
 let main argv =
     map2
-    map3
-    map4
-    map5
-    map6
-    mult3ThenSquareLog 3
-    applyListMult3 [1;392]
-    allFunctions 3
+    //map3
+    //map4
+    //map5
+    //map6
+    //mult3ThenSquareLog 3
+    //applyListMult3 [1;392]
+    //allFunctions 3
     getDate 5 Days Ago
+    redAction
+    blueAction
+    showRainbow
     0 // return an integer exit code
 

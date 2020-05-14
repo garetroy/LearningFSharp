@@ -15,6 +15,7 @@
     <Compile Include="BuildingBlocks.fs" />
     <Compile Include="PatternMatchingForConciseness.fs" />
     <Compile Include="OutOfTheBox.fs" />
+    <Compile Include="ConvenienceFunctionsAsInterfaces.fs" />
   </ItemGroup>
 
 </Project>

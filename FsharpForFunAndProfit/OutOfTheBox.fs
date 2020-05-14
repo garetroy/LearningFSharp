@@ -37,15 +37,15 @@ let QueenHearts = Heart, Queen
 
 let hand = [ TwoClubs; Diamond, Five; KingHearts; QueenHearts]
 
-[<EntryPoint>]
-let main argv =
-    printfn "Alice is %A" alice
-    printfn "Bob is %A" bob 
-    printfn "Bob is alice %A" (bob=alice)
-    printfn "Bob is bob %A" (bob=bob)
-    compareCard TwoClubs KingHearts
-    compareCard KingHearts QueenHearts
-    List.sort hand |> printfn "Sorted hand is %A"
-    List.max hand |> printfn "High card is %A"
-    List.min hand |> printfn "Low card is %A"
-    0 // return an integer exit code
+//[<EntryPoint>]
+//let main argv =
+//    printfn "Alice is %A" alice
+//    printfn "Bob is %A" bob 
+//    printfn "Bob is alice %A" (bob=alice)
+//    printfn "Bob is bob %A" (bob=bob)
+//    compareCard TwoClubs KingHearts
+//    compareCard KingHearts QueenHearts
+//    List.sort hand |> printfn "Sorted hand is %A"
+//    List.max hand |> printfn "High card is %A"
+//    List.min hand |> printfn "Low card is %A"
+//    0 // return an integer exit code

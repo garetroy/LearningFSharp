@@ -14,6 +14,7 @@
     <Compile Include="ExtracingBoilerplate.fs" />
     <Compile Include="BuildingBlocks.fs" />
     <Compile Include="PatternMatchingForConciseness.fs" />
+    <Compile Include="OutOfTheBox.fs" />
   </ItemGroup>
 
 </Project>

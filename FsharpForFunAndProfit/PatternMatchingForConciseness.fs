@@ -27,14 +27,14 @@ let { ID = id2; Name = name2 } = customer1
 
 let { Name = name3; Address = { Street = street3 } } = customer1
 
-[<EntryPoint>]
-let main argv =
-    listMatcher [1;2;3;4] //more
-    listMatcher [1;2] // 1 , 2
-    listMatcher [1] // 1
-    listMatcher [] // []
-    printfn "The customer is called %s" name1
-    printfn "The customer called %s has id %i" name2 id2
-    printfn "The customer is called %s and lives on the street %s" name3 street3
-    0 // return an integer exit code
+//[<EntryPoint>]
+//let main argv =
+//    listMatcher [1;2;3;4] //more
+//    listMatcher [1;2] // 1 , 2
+//    listMatcher [1] // 1
+//    listMatcher [] // []
+//    printfn "The customer is called %s" name1
+//    printfn "The customer called %s has id %i" name2 id2
+//    printfn "The customer is called %s and lives on the street %s" name3 street3
+//    0 // return an integer exit code
 

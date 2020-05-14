@@ -175,19 +175,19 @@ let defaultPoints = [firstPoint; secondPoint; thirdPoint;]
 //    Log = this.Points  |> logDim
 //}
 
-[<EntryPoint>]
-let main argv =
-    map2
-    //map3
-    //map4
-    //map5
-    //map6
-    //mult3ThenSquareLog 3
-    //applyListMult3 [1;392]
-    //allFunctions 3
-    getDate 5 Days Ago
-    redAction
-    blueAction
-    showRainbow
-    0 // return an integer exit code
+//[<EntryPoint>]
+//let main argv =
+//    map2
+//    //map3
+//    //map4
+//    //map5
+//    //map6
+//    //mult3ThenSquareLog 3
+//    //applyListMult3 [1;392]
+//    //allFunctions 3
+//    getDate 5 Days Ago
+//    redAction
+//    blueAction
+//    showRainbow
+//    0 // return an integer exit code
 

@@ -13,6 +13,7 @@
     <Compile Include="LowOverheadTypeDefinitions.fs" />
     <Compile Include="ExtracingBoilerplate.fs" />
     <Compile Include="BuildingBlocks.fs" />
+    <Compile Include="PatternMatchingForConciseness.fs" />
   </ItemGroup>
 
 </Project>

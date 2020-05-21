@@ -6,6 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="good.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Compile Include="SumOfSquares.fs" />
     <Compile Include="Sorting.fs" />
     <Compile Include="DownloadingAWebPage.fs" />
@@ -16,6 +19,12 @@
     <Compile Include="PatternMatchingForConciseness.fs" />
     <Compile Include="OutOfTheBox.fs" />
     <Compile Include="ConvenienceFunctionsAsInterfaces.fs" />
+    <Compile Include="PartialApplication.fs" />
+    <Compile Include="ActivePatterns.fs" />
+    <Compile Include="Immutability.fs" />
+    <Compile Include="ExhaustivePatternMatching.fs" />
   </ItemGroup>
+
+  <ItemGroup />
 
 </Project>

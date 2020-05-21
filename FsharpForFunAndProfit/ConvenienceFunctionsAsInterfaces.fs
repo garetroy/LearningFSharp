@@ -43,14 +43,14 @@ let woofOrBark() = if (DateTime.Now.Millisecond % 2 = 0)
 
 let dog = Animal(woofOrBark)
 
-[<EntryPoint>]
-let main argv =
-    loggingCalculator addingCalculator 5
-    add1WithLogging 15
-    times2WithLogging 15
-    [1..5] |> List.map add1WithLogging
-    add1WithTimer 99
-    cat.MakeNoise
-    dog.MakeNoise
-    dog.MakeNoise
-    0 // return an integer exit code
+//[<EntryPoint>]
+//let main argv =
+//    loggingCalculator addingCalculator 5
+//    add1WithLogging 15
+//    times2WithLogging 15
+//    [1..5] |> List.map add1WithLogging
+//    add1WithTimer 99
+//    cat.MakeNoise
+//    dog.MakeNoise
+//    dog.MakeNoise
+//    0 // return an integer exit code

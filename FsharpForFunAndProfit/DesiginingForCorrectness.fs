@@ -88,14 +88,14 @@ let cartPaid cart =
     | PaidFor _ -> cart 
     | Active state -> state.Pay 100m
 
-[<EntryPoint>]
-let main argv =
-    printf "EmptyCart ->"; emptyCart.Display
-    printf "cartA ->"; cartA.Display
-    printf "cartAB ->"; cartAB.Display
-    printf "cartB ->"; cartB.Display
-    printf "emptyCart2 ->"; emptyCart2.Display
-    printf "emptyCart3 ->"; emptyCart3.Display
-    printf "cartAPaid ->"; (cartPaid cartA).Display
-    printf "emptyCartPaid ->"; (cartPaid emptyCart).Display
-    0 // return an integer exit code
+//[<EntryPoint>]
+//let main argv =
+//    printf "EmptyCart ->"; emptyCart.Display
+//    printf "cartA ->"; cartA.Display
+//    printf "cartAB ->"; cartAB.Display
+//    printf "cartB ->"; cartB.Display
+//    printf "emptyCart2 ->"; emptyCart2.Display
+//    printf "emptyCart3 ->"; emptyCart3.Display
+//    printf "cartAPaid ->"; (cartPaid cartA).Display
+//    printf "emptyCartPaid ->"; (cartPaid emptyCart).Display
+//    0 // return an integer exit code

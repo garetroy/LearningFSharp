@@ -25,6 +25,7 @@
 		<Compile Include="ExhaustivePatternMatching.fs" />
 		<Compile Include="EnsureCorrectCode.fs" />
 		<Compile Include="DesiginingForCorrectness.fs" />
+		<Compile Include="Asynchronousprogramming.fs" />
   </ItemGroup>
 
 </Project>

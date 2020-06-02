@@ -33,13 +33,13 @@ let rec movingAverages list =
 let loggingAverages input =
     movingAverages input |> printfn "Averages of %A is %A" input 
 
-[<EntryPoint>]
-let main argv =
-    handleState Published 
-    processFileInfo goodFileName
-    processFileInfo badFileName
-    loggingAverages []
-    loggingAverages [1.0]
-    loggingAverages [1.0..3.0]
-    0 // return an integer exit code
+//[<EntryPoint>]
+//let main argv =
+//    handleState Published 
+//    processFileInfo goodFileName
+//    processFileInfo badFileName
+//    loggingAverages []
+//    loggingAverages [1.0]
+//    loggingAverages [1.0..3.0]
+//    0 // return an integer exit code
 
